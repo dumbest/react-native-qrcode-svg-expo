@@ -17,9 +17,8 @@ Discussion: https://discord.gg/RvFM97v
 
 ## Installation
 
-`react-native-svg` is built right in Expo.
+`react-native-svg` is built-in with Expo.
 
-Please install react-native-svg first.
 ```
 npm install react-native-qrcode-svg --save
 ```
