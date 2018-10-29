@@ -90,19 +90,19 @@ render() {
 
 ## Props
 
-Name            | Default    | Description
-----------------|------------|--------------
-size            | 100        | Size of rendered image in pixels
-value           | 'this is a QR code' | Value of the QR code
-color           | 'black'        | Color of the QR code
-backgroundColor | 'white'        | Color of the background
-logo | null        | Image source object. Ex. {uri: 'base64string'} or {require('pathToImage')}
-logoSize | 20% of size | Size of the imprinted logo. Bigger logo = less error correction in QR code
-logoBackgroundColor | backgroundColor        | The logo gets a filled quadratic background with this color. Use 'transparent' if your logo already has its own backdrop.
-logoMargin | 2 | logo's distance to its wrapper
-logoBorderRadius | 0 | the border-radius of logo image (Android is not supported)
-getRef          | null       | Get SVG ref for further usage
-ecl             | 'M'        | Error correction level
+Name            | Default    | Type | Description
+----------------|------------|-|-------------
+size            | 100        | number |Size of rendered image in pixels
+value           | 'this is a QR code' | string|Value of the QR code
+color           | 'black'        |string| Color of the QR code
+backgroundColor | 'white'        |string| Color of the background
+logo | null        | source|Image source object. Ex. {uri: 'base64string'} or {require('pathToImage')}
+logoSize | 20% of size |number| Size of the imprinted logo. Bigger logo = less error correction in QR code
+logoBackgroundColor | backgroundColor        | string|The logo gets a filled quadratic background with this color. Use 'transparent' if your logo already has its own backdrop.
+logoMargin | 2 | number|logo's distance to its wrapper
+logoBorderRadius | 0 | number|the border-radius of logo image (Android is not supported)
+getRef          | null       | func|Get SVG ref for further usage
+ecl             | 'M'        | one of 'L', 'M', 'Q', 'H' |Error correction level
 
 
 ## Saving generated code to gallery
