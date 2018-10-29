@@ -1,9 +1,10 @@
 import React, { PureComponent } from 'react'
 import { Image as RNImage } from 'react-native'
 import PropTypes from 'prop-types'
-import Svg, { Defs, G, Rect, Path, Image, ClipPath } from 'react-native-svg'
+import { Svg } from 'expo';
 import genMatrix from './genMatrix'
 
+const { Defs, G, Rect, Path, Image, ClipPath } = Svg;
 const DEFAULT_SIZE = 100
 const DEFAULT_BG_COLOR = 'white'
 
